@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Accordion';
+    src: url('../assets/fonts/Accordion-Font.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Accordion';
+    src: url('../assets/fonts/Accordion-Font.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Accordion';
+    src: url('../assets/fonts/Accordion-Font.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Accordion';
+    src: url('../assets/fonts/Accordion-Font.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Accordion';
+    src: url('../assets/fonts/Accordion-Font.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Accordion';
+    src: url('../assets/fonts/Accordion-Font.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Accordion', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    color: var(--text-color);
+}
+
+* {
+    font-size: inherit;
+}
+
+span,
+p,
+h1,
+h2,
+h3 {
+    white-space: pre-wrap;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.main-text {
+    color: var(--text-color);
+}
+
+.main-text-hover {
+    color: var(--hover_text-color);
+}
+
+.contrast_text-color {
+    color: var(--contrast_text-color);
+}
+
+.unaccented_text-color {
+    color: var(--unaccented_text-color);
+}
+
+.unaccented_hover_text-color {
+    color: var(--unaccented_hover_text-color);
+}
+
+.primary_text-color {
+    color: var(--primary_text-color);
+}
+
+.primary_hover_text-color {
+    color: var(--primary_hover_text-color);
+}
+
+.secondary_text-color {
+    color: var(--secondary_text-color);
+}
+
+.secondary_hover_text-color {
+    color: var(--secondary_hover_text-color);
+}
+
+.label_text-color {
+    color: var(--label_text-color);
+}
+
+.label_hover_text-color {
+    color: var(--label_hover_text-color);
+}
+
+.label_contrast_text-color {
+    color: var(--label_contrast_text-color);
+}
+
+.link_text-color {
+    color: var(--link_text-color);
+}
+
+.link_hover_text-color {
+    color: var(--link_hover_text-color);
+}
+
+.danger_text-color {
+    color: var(--danger_text-color);
+}
+
+.danger_hover_text-color {
+    color: var(--danger_hover_text-color);
+}
+
+.success_text-color {
+    color: var(--success_text-color);
+}
+
+.success_hover_text-color {
+    color: var(--success_hover_text-color);
+}
+
+.warning_text-color {
+    color: var(--warning_text-color);
+}
+
+.warning_hover_text-color {
+    color: var(--warning_hover_text-color);
+}
+
+.info_text-color {
+    color: var(--info_text-color);
+}
+
+.info_hover_text-color {
+    color: var(--info_hover_text-color);
+}
+
+.readonly_text-color {
+    color: var(--readonly_text-color);
+}
+
+.text-400 {
+    font-weight: 400;
+}
+
+.text-500 {
+    font-weight: 500;
+}
+
+.text-600 {
+    font-weight: 600;
+}
+
+.text-700 {
+    font-weight: 700;
+}
