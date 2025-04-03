@@ -106,12 +106,12 @@
     --placeholder_text-color_list: #AAB0C1;
     --text_background-color_decoratorHighlight: #fffece;
     --text-color_decoratorHighlight: #000000;
-    --shadow-color_a: #000000 12%;
-    --shadow-color_b: #000000 14%;
-    --shadow-color_c: #000000 6%;
-    --shadow-color_d: #000000 10%;
-    --shadow-color: #000000 20%;
-    --dim_background-color: #000000 40%;
+    --shadow-color_a: rgba(0, 0, 0, 0.12);
+    --shadow-color_b: rgba(0, 0, 0, 0.14);
+    --shadow-color_c: rgba(0, 0, 0, 0.06);
+    --shadow-color_d: rgba(0, 0, 0, 0.10);
+    --shadow-color: rgba(0, 0, 0, 0.20);
+    --dim_background-color: rgba(0, 0, 0, 0.40);
     --swipe1BackgroundColor: #F19B38;
     --swipe2BackgroundColor: #4B6FA3;
     --swipe3BackgroundColor: #07A723;
@@ -130,6 +130,7 @@
     --placeholderSkinColor: transparent;
     --placeholderHairColor: transparent;
     --placeholderDressColor: transparent;
+    --border-radius: 100px;
     --7xl: 300px;
     --6xl: 190px;
     --5xl: 144px;

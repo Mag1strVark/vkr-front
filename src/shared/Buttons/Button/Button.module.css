@@ -1,0 +1,92 @@
+.button {
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px var(--shadow-color_b);
+    background: var(--brand_color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    line-height: 100%;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    border: none;
+    gap: 12px;
+}
+
+.button[data-loading='true'] {
+    cursor: not-allowed;
+}
+
+.button div {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+}
+
+.button[data-loading='true'] div {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.button[data-loading='true'] svg {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.button[data-loading='true']::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button[data-loading='true']::after::before,
+.button[data-loading='true']::after::after {
+    content: '';
+    width: 4px;
+    height: 20px;
+    background-color: var(--contrast_text-color);
+    position: absolute;
+    animation: loading-bar 0.6s infinite alternate;
+}
+
+.button[data-loading='true']::after::before {
+    animation-delay: 0s;
+    left: 0;
+}
+
+.button[data-loading='true']::after::after {
+    animation-delay: 0.3s;
+    right: 0;
+}
+
+@keyframes loading-bar {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(0.5);
+    }
+}
+
+.button[data-size='m'] {
+    font-size: 14px;
+    padding: 12px;
+}
+
+.button[data-size='xl'] {
+    font-size: 16px;
+    padding: 16px;
+}
+
+.button[data-size='5xl'] {
+    font-size: 18px;
+    padding: 24px;
+}

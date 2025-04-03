@@ -1,5 +1,8 @@
+import './styles'
+import AuthProvider from './screens/Auth/components/AuthProvider'
+
 const App = () => {
-  return <div></div>
+	return <AuthProvider>привет</AuthProvider>
 }
 
 export default App
