@@ -3,7 +3,7 @@ import { lazy } from 'react'
 import { urls } from './app.urls.ts'
 
 const Interviews = lazy(() => import('../screens/Interviews'))
-const Tasks = lazy(() => import('../screens/Tasks'))
+// const Tasks = lazy(() => import('../screens/Tasks'))
 
 const appRoutes: IRoute[] = [
 	{
@@ -11,8 +11,20 @@ const appRoutes: IRoute[] = [
 		element: <Interviews />
 	},
 	{
+		path: urls.candidates,
+		element: <Interviews />
+	},
+	{
+		path: urls.profile,
+		element: <Interviews />
+	},
+	{
 		path: urls.tasks,
-		element: <Tasks />
+		element: <Interviews />
+	},
+	{
+		path: urls.settings,
+		element: <Interviews />
 	}
 ]
 
