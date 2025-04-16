@@ -1,0 +1,112 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+.tab {
+    padding: 12px;
+    border: 1px solid transparent;
+    color: var(--label_text-color);
+}
+
+.tab[data-active='true'] {
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}
+
+.content {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+}
+
+.leftContent {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.categoryTabs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.rightContent {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 70%;
+    height: 100%;
+    background: var(--contrast_text-color);
+    padding: 0 8px;
+    border-radius: 14px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.itemPanel {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: var(--contrast_text-color);
+    padding: 30px 12px;
+    display: flex;
+    width: 100%;
+    height: 30px;
+}
+
+.addButton {
+    padding: 12px;
+    border-radius: 100px;
+    background-color: #3333330D;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.activePanel {
+    cursor: pointer;
+}
+
+.itemPanelLeft{
+    display: flex;
+    gap: 15px;
+    width: 10%;
+    align-items: center;
+}
+
+.itemPanelCenter{
+    display: flex;
+    gap: 20px;
+    width: 85%;
+    align-items: center;
+}
+
+.itemPanelRight{
+    display: flex;
+    gap: 5px;
+    width: 5%;
+    align-items: center;
+}
+
+.itemAction {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 20px;
+    border-left: 1px solid var(--border-color);
+    line-height: 10px;
+    cursor: pointer;
+}

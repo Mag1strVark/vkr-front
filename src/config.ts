@@ -5,20 +5,20 @@
  * @public
  */
 interface IConfig {
-  /**
-   * URL API сервера
-   */
-  API_URL: string
+	/**
+	 * URL API сервера
+	 */
+	API_URL: string
 
-  /**
-   * Режим работы приложения
-   */
-  MODE: 'development' | 'production' | 'test'
+	/**
+	 * Режим работы приложения
+	 */
+	MODE: 'development' | 'production' | 'test'
 }
 
 const config: IConfig = {
-  API_URL: import.meta.env.VITE_APP_API_URL || 'http://localhost:10000',
-  MODE: import.meta.env.NODE_ENV || 'development',
+	API_URL: import.meta.env.VITE_APP_API_URL || 'http://45.93.201.160:10000',
+	MODE: import.meta.env.NODE_ENV || 'development'
 }
 
 export default config

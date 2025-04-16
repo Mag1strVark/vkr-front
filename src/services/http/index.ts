@@ -43,6 +43,7 @@ export const applyInterceptors = (
 		if (isRefreshing) return refreshRequest
 		isRefreshing = true
 
+		// @ts-ignore
 		refreshRequest = authApi.refresh().finally(() => (isRefreshing = false))
 		return refreshRequest
 	}
@@ -52,6 +53,7 @@ export const applyInterceptors = (
 			expDate = new Date(tokenExpired?.exp * 1000)
 		}
 		const shouldRefresh = authState.accessToken === '' || expDate < new Date()
+		// @ts-ignore
 		return shouldRefresh ? refreshToken : Promise.resolve(authState)
 	}
 

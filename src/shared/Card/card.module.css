@@ -1,0 +1,61 @@
+.container {
+    cursor: pointer;
+    margin: 5px;
+    background-color: #EBF4FF80;
+    width: 100%;
+    border-radius: 6px;
+    padding: 8px 16px;
+    gap: 10px;
+    border: 1px solid #8991A938;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+}
+
+.titleLeft {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    height: 100%;
+}
+
+.titleLeftMain {
+    color: var(--secondary_text-color);
+    font-size: 14px;
+}
+
+.titleLeftAddition {
+    color: var(--label_text-color);
+    font-size: 12px;
+}
+
+.titleRightIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #97ABCC;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.middle {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15px;
+}
+
+.middleText {
+    color: var(--unaccented_color);
+    font-size: 12px;
+}
+
+.description {
+    color: var(--text-color);
+    font-size: 14px;
+}
